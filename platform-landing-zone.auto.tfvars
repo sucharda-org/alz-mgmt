@@ -177,7 +177,7 @@ management_group_settings = {
     private_dns_zone_region                     = "$${starter_location_01}"
     private_dns_zone_resource_group_name        = "$${dns_resource_group_name}"
     # Sovereign Landing Zone: restrict all resources to Sweden Central
-    allowed_locations                           = jsonencode(["swedencentral"])
+    allowed_locations                           = "[\"swedencentral\"]"
   }
   subscription_placement = {
     identity = {
