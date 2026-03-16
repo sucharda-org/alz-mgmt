@@ -18,7 +18,9 @@ terraform {
       version = "~> 2.5"
     }
   }
-  backend "azurerm" {}
+  backend "azurerm" {
+    use_azuread_auth = true
+  }
 }
 
 provider "alz" {
